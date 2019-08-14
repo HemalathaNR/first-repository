@@ -1,0 +1,36 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int i,j,r,c,mid,ref;
+    scanf("%d %d",&r,&c);
+    mid=(r+1)/2-1;
+    for(i=0;i<mid;i++){
+        for(j=0;j<c;j++){
+            printf("1");
+        }
+        printf("\n");
+    }
+    if(r%2==0)
+    ref=(r-1)/2;
+    else
+    ref=r/2-1;
+    for(i=0;i<ref;i++){    
+for(j=0;j<c;j++){
+    if(j==mid)
+            printf("0");
+    else
+         printf("1");
+        }
+      printf("\n");  
+    }
+    for(i=0;i<mid;i++){
+        for(j=0;j<c;j++){
+            printf("1");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
