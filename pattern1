@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,j,row,col,mid,mid_row;
+    scanf("%d %d",&row,&col);
+    mid=(row+1)/2-1;
+    if(row%2==0)
+    mid_row=(row-1)/2;
+    else
+    mid_row=row/2-1;
+    for(i=0;i<mid;i++){    
+for(j=0;j<col;j++){
+    if(j==mid)
+            printf("0");
+    else
+         printf("1");
+        }
+      printf("\n");  
+    }
+    for(i=0;i<mid_row;i++){
+        for(j=0;j<col;j++){
+            printf("0");
+        }
+        printf("\n");
+    }
+    
+    for(i=0;i<mid;i++){    
+for(j=0;j<col;j++){
+    if(j==mid)
+            printf("0");
+    else
+         printf("1");
+        }
+      printf("\n");  
+    }
+
+    return 0;
+}
